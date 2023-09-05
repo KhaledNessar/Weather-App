@@ -1,10 +1,6 @@
 body {
-    background-image: url("images/background.jpg");
-    background-size: cover;
-    background-attachment: fixed; /* This makes the background fixed */
-    background-repeat: no-repeat;
-    margin: 0; /* Remove margin to cover the entire page */
-    padding: 0; /* Remove padding */
+    background-color: #b1bdd5;
+    margin: 0;
     font: 12px system-ui;
 }
 
