@@ -1,0 +1,3 @@
+$apiKey = "abb21b96237441179709d635f51a8f80"; // Openweathermap
+
+Datum anordnung ändern
