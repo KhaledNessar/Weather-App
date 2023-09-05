@@ -17,15 +17,18 @@
 
 <div class="box">
     <form method="post" action="index.php" class="form">
-        <label for="cityName">Weather in:</label>
-        <input type="text" name="cityName" placeholder="Please enter a city name!" required>
+
+        <label for="cityName"> Weather in:
+            <input type="text" name="cityName" placeholder="Please enter a city name!" required>
+        </label>
         <input type="submit" value="Search" name="submit">
     </form>
 </div>
 
 <?php
+require(__DIR__ . '/config.php');
 
-include("config.php");
+global $apiKey;
 
 if (isset($_POST["submit"])) {
     $city = $_POST["cityName"];
@@ -74,7 +77,7 @@ if (isset($_POST["submit"])) {
                 $iconName = $city_data->list[$i]->weather[0]->icon;
                 $iconLink = "https://openweathermap.org/img/wn/" . $iconName . "@2x.png";
 
-                echo "<img src='$iconLink'>";
+                echo "<img alt='weather icons' src='$iconLink'>";
 
                 // General information about the weather
                 echo '<h2>Temperature</h2>';
