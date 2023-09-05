@@ -1,3 +1,6 @@
 $apiKey = "abb21b96237441179709d635f51a8f80"; // Openweathermap
 
+Karten Rund machen bei ausgabe
+5 nebeneinander bei Desktop
+Bei mobile sollen die untereinander
 Datum anordnung ändern

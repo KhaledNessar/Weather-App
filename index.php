@@ -55,23 +55,23 @@
 
                         // General information about the weather
                         echo '<h2>Temperature</h2>';
-                        echo '<p><strong>Current:</strong>', $city_data->list[$i]->main->temp, '&deg; C</p>';
-                        echo '<p><strong>Minimum:</strong>', $city_data->list[$i]->main->temp_min, '&deg; C</p>';
-                        echo '<p><strong>Maximum:</strong>', $city_data->list[$i]->main->temp_max, '&deg; C </p>';
+                        echo '<p><strong>Current: </strong>', $city_data->list[$i]->main->temp, '&deg; C</p>';
+                        echo '<p><strong>Minimum: </strong>', $city_data->list[$i]->main->temp_min, '&deg; C</p>';
+                        echo '<p><strong>Maximum: </strong>', $city_data->list[$i]->main->temp_max, '&deg; C </p>';
 
                         // Something about the air
                         echo '<h2>Air</h2>';
-                        echo '<p><strong>Humidity:</strong>', $city_data->list[$i]->main->humidity, '%</p>';
-                        echo '<p><strong>Pressure:</strong>', $city_data->list[$i]->main->pressure, 'hpa</p>';
+                        echo '<p><strong>Humidity: </strong>', $city_data->list[$i]->main->humidity, '%</p>';
+                        echo '<p><strong>Pressure: </strong>', $city_data->list[$i]->main->pressure, 'hpa</p>';
 
                         // Some info about the wind
                         echo '<h2>Wind</h2>';
-                        echo '<p><strong>Speed:</strong>', $city_data->list[$i]->wind->speed, 'm/s</p>';
-                        echo '<p><strong>Orientation:</strong>', $city_data->list[$i]->wind->deg, '&deg; </p>';
+                        echo '<p><strong>Speed: </strong>', $city_data->list[$i]->wind->speed, 'm/s</p>';
+                        echo '<p><strong>Orientation: </strong>', $city_data->list[$i]->wind->deg, '&deg; </p>';
 
                         // Description
                         echo '<h2>The weather</h2>';
-                        echo '<p><strong>Description:</strong>', $city_data->list[$i]->weather[0]->description, '</p>';
+                        echo '<p><strong>Description: </strong>', $city_data->list[$i]->weather[0]->description, '</p>';
                         echo '</div>';
                     }
                 }
