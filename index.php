@@ -14,12 +14,12 @@
     <body>
 
 
-        <h1 class="title">Weather Forecast</h1>
+        <h1 class="title">Weather Forecast For Today</h1>
 
         <div class="box">
             <form method="post" action="index.php" class="form">
                 Weather in:
-                <input type="text" name="cityName">
+                <input type="text" name="cityName" placeholder="Please enter a city name!">
                 <input type="submit" value="Search" name="submit">
             </form>
         </div>
@@ -42,12 +42,17 @@
 
                 echo '<div class="container">';
 
-                for ($i = 0; $i < $city_list; $i++) {
-                    $city_time = explode(" ", $city_data->list[$i]->dt_txt);
+                $currentTimestamp = time(); // Aktuelle Serverzeit in Unix-Timestamp erhalten
+                $today = date("d/m/y", $currentTimestamp); // Heutiges Datum
 
-                    if ($city_time[1] == '15:00:00') {
+                for ($i = 0, $count = 0; $i < $city_list && $count < 5 ; $i++) {
+                    $timestamp = strtotime($city_data->list[$i]->dt_txt);
+                    $forecastDate = date("d/m/y", $timestamp);
+                    $formattedTime = date("H:i", $timestamp);
+
+                    if ($timestamp >= $currentTimestamp) {
                         echo '<div class="item">';
-                        echo '<h1>', $city_data->list[$i]->dt_txt, '</h1>';
+                        echo '<h1>', $forecastDate, ' ', $formattedTime, '</h1>';
                         $iconName = $city_data->list[$i]->weather[0]->icon;
                         $iconLink = "http://openweathermap.org/img/wn/" . $iconName . "@2x.png";
 
@@ -73,6 +78,7 @@
                         echo '<h2>The weather</h2>';
                         echo '<p><strong>Description: </strong>', $city_data->list[$i]->weather[0]->description, '</p>';
                         echo '</div>';
+                        $count++;
                     }
                 }
                 echo '</div>';

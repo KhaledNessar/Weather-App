@@ -1,6 +1,11 @@
 $apiKey = "abb21b96237441179709d635f51a8f80"; // Openweathermap
 
 Karten Rund machen bei ausgabe
-5 nebeneinander bei Desktop
+fünf wetter karten nebeneinander bei Desktop
 Bei mobile sollen die untereinander
-Datum anordnung ändern
+Datum anordnung ändern von Jahr, Monat, Tag zu Tag/Monat/Jahr
+Wetter Vorhersage soll aus der momentanen Uhrzeit angezeigt werden
+Die Uhrzeit soll angezeigt werden und die Vorhersage geht vom heutigen Tag dann darauffolgenden Tag usw...
+Das Komplette Wetter Vorhersage für nur einem Tag soll gezeigt werden
+Und es müssen fünf wetterkarten sein
+Von 9 Uhr, 12 Uhr, 15 Uhr, 18 Uhr bis 21 Uhr sollen die fünf Wetterkarten darstellen
