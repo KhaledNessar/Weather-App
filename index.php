@@ -38,7 +38,7 @@ if (isset($_POST["submit"])) {
     $response_headers = get_headers($apiUrl);
 
     if ($response_headers[0] === 'HTTP/1.1 404 Not Found') {
-        echo 'City not found';
+        echo '<div class="error-message">City not found</div>';
     } else {
         try {
             $json_data = file_get_contents($apiUrl);
