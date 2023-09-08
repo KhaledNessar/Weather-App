@@ -8,6 +8,7 @@
             rel="stylesheet"
             href="//fonts.googleapis.com/css?family=Just+Another+Hand"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Weather App</title>
 </head>
 <body>
@@ -18,12 +19,14 @@
 <div class="box">
     <form method="post" action="index.php" class="form">
 
-        <label for="cityName"> Weather in:
-            <input type="text" name="cityName" placeholder="Please enter a city name!" required>
-        </label>
-        <input type="submit" value="Search" name="submit">
+        <div class="search-container">
+            <input type="text" name="cityName" placeholder="Please enter a city name" required><i class="fa-solid fa-magnifying-glass"></i></input>
+        </div>
+
+        <button type="submit" name="submit" class="button">Submit</button>
     </form>
 </div>
+
 
 <?php
 require(__DIR__ . '/config.php');

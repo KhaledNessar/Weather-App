@@ -1,11 +1,12 @@
 body {
-    background-color: #b1bdd5;
+    background-color: #ffffff;
     margin: 0;
     font: 12px system-ui;
 }
 
 .form {
-    display: block;
+    display: flex;
+    justify-content: space-between;
     font: 2rem "Fira Sans", sans-serif;
     font-weight: bolder;
     color: #33332f;
@@ -13,12 +14,12 @@ body {
 }
 
 .box {
-    margin: 0 auto;
+    margin: 10px 20px;
     width: 300px;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.5);
     height: auto;
-    padding: 20px;
+    padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -27,9 +28,87 @@ label {
     margin: 1rem 0;
 }
 
-.title {
+.form {
+    display: flex;
+    justify-content: space-between;
+    font: 2rem "Fira Sans", sans-serif;
+    font-weight: bolder;
+    color: #33332f;
     text-align: center;
-    color: wheat;
+    margin-right: 50px;
+}
+
+.box {
+    margin: 10px 20px;
+    width: 400px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: auto;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+input,
+label {
+    margin: 1rem 0;
+}
+
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.search-container input[type="text"] {
+    flex: 1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 35px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+.search-container input[type="text"]:focus {
+    outline: none;
+    border: 1px solid #0f7fe1;
+    box-shadow: 0 0 10px #0f7fe1;
+}
+
+.search-container i {
+    position: absolute;
+    opacity: 0.7;
+    font-size: 20px;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+    transition: 0.3s;
+}
+
+.search-container input[type="text"]:focus + i {
+    color: #0f7fe1;
+}
+
+.button {
+    border-radius: 30px;
+    border: 2px solid #0f7fe1;
+    background-color: white;
+    padding: 8px 16px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.title {
+    text-align: left;
+    color: #0f7fe1;
     font-size: 50px;
 }
 
@@ -39,17 +118,6 @@ label {
     left: -50%;
     width: 200%;
     height: 200%;
-}
-
-.bg img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    min-width: 50%;
-    min-height: 50%;
 }
 
 .container {
@@ -104,4 +172,3 @@ label {
     font-size: 20px;
     color: wheat;
 }
-
