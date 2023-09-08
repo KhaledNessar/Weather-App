@@ -63,7 +63,7 @@ if (isset($_POST["submit"])) {
                 $city_list = count($city_data->list);
 
                 echo '<div class="city_title">';
-                echo '<h1>', $city_data->city->name, '(', $city_data->city->country, ')</h1>';
+                echo '<h1 class="custom-text">', $city_data->city->name, '(', $city_data->city->country, ')</h1>';
                 echo '</div>';
 
                 echo '<div class="container">';
