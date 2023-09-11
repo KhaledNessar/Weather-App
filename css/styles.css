@@ -34,15 +34,15 @@ label {
     color: #33332f;
     text-align: center;
     margin-right: 50px;
+    padding-left: 20px;
 }
 
 .box {
     margin: 10px 20px;
     width: 400px;
-    border-radius: 20px;
+    border-radius: 80px;
     background-color: rgba(255, 255, 255, 0.5);
     height: auto;
-    padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -57,6 +57,7 @@ label {
     align-items: center;
     border-radius: 20px;
     padding: 5px;
+    padding: 5px;
     margin-left: 10px;
 }
 
@@ -68,8 +69,9 @@ label {
     border: none;
     border-radius: 20px;
     font-size: 16px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 5px;
     margin-bottom: 10px;
+    margin-right: 10px;
 }
 
 .search-container input[type="text"]:focus {
@@ -83,6 +85,7 @@ label {
     opacity: 0.7;
     font-size: 20px;
     left: 10px;
+    bottom: 25px;
     top: 50%;
     transform: translateY(-50%);
     color: #aaa;
@@ -97,7 +100,7 @@ label {
     border-radius: 30px;
     border: 2px solid #0f7fe1;
     background-color: white;
-    padding: 8px 16px;
+    padding: 8px 12px;
     font-size: 18px;
     font-weight: bold;
     margin-top: 20px;
